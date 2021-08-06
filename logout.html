@@ -7,55 +7,25 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body>
-  <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-    <div class="w3-container w3-theme-d2">
-      <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-      <br>
-      <div class="w3-padding w3-center">
-        <img class="w3-circle" src="" alt="" style="width:75%">
-      </div>
-    </div>
-      <a class="w3-bar-item w3-button" onclick="openHome()">Home</a>
-      <a class="w3-bar-item w3-button" onclick="openStudy()">Useful links</a>
-      <a class="w3-bar-item w3-button" onclick="openLogout()">Logout</a>
-  </nav>
+<body style="width:100%; height: 100vh">
 
   <header class="w3-bar w3-card w3-theme">
     <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
   </header>
 
-  <div class="w3-container" align="center">
-    You have successfully logged out! Thank you.
+  <br>
+  <br>
+
+  <div class="w3-container" align="center" style="height:100%; font-size: 14px">
+    <div>
+          You have successfully logged out! <br>Thank you for your time
+    </div>
   </div>
+
 
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script>
-    closeSidebar();
-    function openSidebar() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
 
-    function closeSidebar() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-
-    function openHome() {
-      window.location="index.html";
-    }
-
-    function openStudy() {
-      window.location="study.html";
-    }
-
-    function openLogout() {
-      window.location="logout.html";
-    }
-
-    var timer = setTimeout(function()
-    {
-      window.location="logout.html";
-    }, 90000);
   </script>
 
 </body>
